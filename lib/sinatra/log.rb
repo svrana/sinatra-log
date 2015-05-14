@@ -59,10 +59,12 @@ module Sinatra
     attr_reader :outputter
 
     def initialize(config={})
+      errors = []
       [:logger_name, :loglevel, :log_filename, :enabled].each do |key|
         if !config.include?(key)
-          raise ArgumentError, "#{key} required, but not specified in config hash"
+          errors << "#{key} required, but not specified in config hash"
         end
+        raise ArgumentError, "#{errors}" if errors.count > 0
       end
 
       logger_name = config[:logger_name].to_s.gsub(/\s+/, '_')
