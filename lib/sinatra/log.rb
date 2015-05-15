@@ -7,17 +7,6 @@ module Sinatra
   #
   #   [Log Level]: [Timestamp (ISO-8601)]: [File:linenum]: [Log Message]
   #
-  # Access is usually wrapped in a class helper:
-  #
-  # class MyProject
-  #   self.log
-  #     @logger ||= Sinatra::Log.new(:logger_name => 'myproject',
-  #                                  :log_filename => 'myproject/dev.log',
-  #                                  :loglevel => 'WARN',
-  #                                  :enabled => true,
-  #                                  :project_dir => '/var/opt/myproj')
-  #   end
-  # end
   class Log
     include Log4r
 
