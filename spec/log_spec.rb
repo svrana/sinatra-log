@@ -7,7 +7,7 @@ describe Sinatra::Log do
       :enabled => true,
       :logger_name => 'mylogger',
       :loglevel => 'DEBUG',
-      :log_filename => 'log'
+      :log_filename => 'rspec-test.log'
     }
   end
 

@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'sinatra/log'
+require 'sinatra/log/default_formatter'
 require 'timecop'
 
 describe Sinatra::Log::DefaultFormatter do

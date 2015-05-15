@@ -1,14 +1,14 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sinatra/version'
+require 'sinatra/log/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "sinatra-log"
-  spec.version       = Sinatra::Logger::VERSION
+  spec.version       = Sinatra::Log::VERSION
   spec.authors       = ["Shaw Vrana"]
   spec.email         = ["shaw@vranix.com1"]
-  spec.description   = %q{A logger for Sinatra}
+  spec.description   = %q{A logger for Sinatra applications}
   spec.summary       = %q{}
   spec.homepage      = "http://github.com/svrana/sinatra-log"
   spec.license       = "MIT"
